@@ -33,4 +33,4 @@ Classifying Plankton with convolutional neural networks
       * `Opt_val_loss` contains the validation loss for the alternative optimization algorithms
       * `Opt_val_acc` contains the validation accuracy for the alternative optimization algorithms
 
-
+A report and presentation can be found in the repo for a more complete explanation of what I did for the project.

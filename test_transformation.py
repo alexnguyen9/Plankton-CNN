@@ -22,10 +22,10 @@ model1.to(device)
 
 
 # dataframe to hold results of the transformations
-train_loss = pd.DataFrame(index=[x for x in range(30)])
-train_acc = pd.DataFrame(index=[x for x in range(30)])
-val_loss = pd.DataFrame(index=[x for x in range(30)])
-val_acc = pd.DataFrame(index=[x for x in range(30)])
+trans_train_loss = pd.DataFrame(index=[x for x in range(30)])
+trans_train_acc = pd.DataFrame(index=[x for x in range(30)])
+trans_val_loss = pd.DataFrame(index=[x for x in range(30)])
+trans_val_acc = pd.DataFrame(index=[x for x in range(30)])
 
 
 no_trans_train_loss = [] 
@@ -82,8 +82,8 @@ for epoch in range(30):
 
 
 # Store results
-train_loss.assign(no_trans_train_loss = no_trans_train_loss, flips_only_train_loss = flips_only_train_loss, all_transform_train_loss =all_transform_train_loss)
-train_acc.assign(no_trans_train_acc = no_trans_train_acc, flips_only_train_acc = flips_only_train_acc, all_transform_train_acc=all_transform_train_acc)
-val_loss.assign(no_trans_val_loss = no_trans_val_loss, flips_only_val_loss = flips_only_val_loss, all_transform_val_loss=all_transform_val_loss)
-val_acc.assign(no_trans_val_acc = no_trans_val_acc, flips_only_val_acc = flips_only_val_acc, all_transform_val_acc = all_transform_val_acc)
+trans_train_loss.assign(no_trans_train_loss = no_trans_train_loss, flips_only_train_loss = flips_only_train_loss, all_transform_train_loss =all_transform_train_loss)
+trans_train_acc.assign(no_trans_train_acc = no_trans_train_acc, flips_only_train_acc = flips_only_train_acc, all_transform_train_acc=all_transform_train_acc)
+trans_val_loss.assign(no_trans_val_loss = no_trans_val_loss, flips_only_val_loss = flips_only_val_loss, all_transform_val_loss=all_transform_val_loss)
+trans_val_acc.assign(no_trans_val_acc = no_trans_val_acc, flips_only_val_acc = flips_only_val_acc, all_transform_val_acc = all_transform_val_acc)
 

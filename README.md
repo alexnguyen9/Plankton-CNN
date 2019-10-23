@@ -1,7 +1,7 @@
 # Plankton-CNN
 Classifying Plankton with convolutional neural networks
 
-
+A [report](https://github.com/alexnguyen9/Plankton-CNN/blob/master/Final%20Project%20495.pdf) and [presentation](https://github.com/alexnguyen9/Plankton-CNN/blob/master/Final%20Presentation%20495.pptx) can be found in the repo for a more complete explanation of what I did for the project.
 
 1. Make sure you download the kaggle "train" data and put it into the data folder, the data from kaggle can be downloaded [here](https://www.kaggle.com/c/datasciencebowl)
 
@@ -33,4 +33,4 @@ Classifying Plankton with convolutional neural networks
       * `Opt_val_loss` contains the validation loss for the alternative optimization algorithms
       * `Opt_val_acc` contains the validation accuracy for the alternative optimization algorithms
 
-A report and presentation can be found in the repo for a more complete explanation of what I did for the project.
+
